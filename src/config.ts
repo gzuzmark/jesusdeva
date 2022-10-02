@@ -9,14 +9,14 @@ export const NAV_ITEMS: NavItems = {
         path: '/blog',
         title: 'blog'
     },
-    tags: {
-        path: '/tags',
-        title: 'tags'
-    },
-    media: {
-        path: '/media',
-        title: 'media'
-    },
+    // tags: {
+    //     path: '/tags',
+    //     title: 'tags'
+    // },
+    // media: {
+    //     path: '/media',
+    //     title: 'media'
+    // },
     about: {
         path: '/about',
         title: 'about'
@@ -27,9 +27,9 @@ export const SITE = {
     // Your site's detail?
     name: 'Tanjiro',
     title: 'Tanjiro',
-    description: 'Tanjiro website',
+    description: 'Software Engineer ',
     url: 'https://astro-ink.vercel.app',
-    githubUrl: 'https://github.com/one-aalam/astro-ink',
+    githubUrl: 'https://github.com/gzuzmark',
     listDrafts: true
     // description ?
 }

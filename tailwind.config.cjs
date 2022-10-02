@@ -19,10 +19,10 @@ module.exports = {
             // Shades-of-X
             // keep one group of colors enabled at a time
 
-            primary: colors.purple[700],
-            primaryDark: colors.purple[300],
-            primarySecondary: colors.purple[800],
-            primarySecondaryDark: colors.purple[500],
+            primary: colors.violet[700],
+            primaryDark: colors.violet[300],
+            primarySecondary: '#7b16ff',
+            primarySecondaryDark: colors.violet[500],
 
             // primary: colors.pink[700],
             // primaryDark: colors.pink[300],

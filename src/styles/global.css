@@ -13,9 +13,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-	/* Console.log of CSS */
-	/* box-sizing: border-box;
-	background: rgb(0 100 0 / 0.1) !important; */
-	/* outline: 1px solid limegreen !important; */
-}
+
+
+

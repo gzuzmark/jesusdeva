@@ -1,36 +1,41 @@
 ---
-import DefaultPageLayout from '$/layouts/default.astro'
-import PostPreviewList from '$/components/PostPreviewList.astro'
-import Paginator from '$/components/Paginator.astro'
-import { SITE, PAGE_SIZE } from '$/config'
+import DefaultPageLayout from "$/layouts/default.astro";
+import PostPreviewList from "$/components/PostPreviewList.astro";
+import Paginator from "$/components/Paginator.astro";
+import { SITE, PAGE_SIZE } from "$/config";
+import rss from "@astrojs/rss";
 
-let title = 'Blog'
-let description = 'All the articles posted so far...'
+let title = "Blog";
+let description = "All the articles posted so far...";
 
-export async function getStaticPaths({ paginate, rss }) {
-  const allPosts = await Astro.glob('./*.md');
-  const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+export async function getStaticPaths({ paginate }) {
+  const allPosts = await Astro.glob("./*.md");
+  const sortedPosts = allPosts.sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
 
-  rss({
-    title: `${SITE.name} | Blog`,
-    description: SITE.description,
-    customData: `<language>en-us</language>`,
-    items: sortedPosts.map(item => ({
-      title: item.frontmatter.title,
-      description: item.frontmatter.description,
-      link: item.url,
-      pubDate: item.frontmatter.date,
-    })),
-  })
+  // TODO: Remove since it was moved to rss.xml.js
+  // rss({
+  //   title: `${SITE.name} | Blog`,
+  //   description: SITE.description,
+  //   customData: `<language>en-us</language>`,
+  //   items: sortedPosts.map(item => ({
+  //     title: item.frontmatter.title,
+  //     description: item.frontmatter.description,
+  //     link: item.url,
+  //     pubDate: item.frontmatter.date,
+  //   })),
+  // })
 
-    return paginate(sortedPosts, {
-      pageSize: PAGE_SIZE
-    })
+  return paginate(sortedPosts, {
+    pageSize: PAGE_SIZE,
+  });
 }
 
-const { page } = Astro.props
+const { page } = Astro.props;
 ---
+
 <DefaultPageLayout content={{ title, description }}>
-    <PostPreviewList posts={page.data} />
-    <Paginator page={page} />
+  <PostPreviewList posts={page.data} />
+  <Paginator page={page} />
 </DefaultPageLayout>

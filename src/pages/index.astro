@@ -1,25 +1,37 @@
 ---
-import DefaultPageLayout from '$/layouts/default.astro'
-import PostPreviewList from '$/components/PostPreviewList.astro'
+import DefaultPageLayout from "$/layouts/default.astro";
+import PostPreviewList from "$/components/PostPreviewList.astro";
 
+const title = "Home";
+const description =
+  "Astro-Ink is a crisp, minimal, personal blog theme for Astro";
 
-const title = 'Home'
-const description = 'Astro-Ink is a crisp, minimal, personal blog theme for Astro'
-
-const posts = await Astro.glob('./blog/*.md')
+const posts = await Astro.glob("./blog/*.md");
 ---
+
 <DefaultPageLayout content={{ title, description }} showPageHeader={false}>
-    <PostPreviewList posts={posts} />
-    <div class="page__actions">
-        <a class="action__go-to-blog" href="/blog" title="All Posts">All Posts &rarr;</a>
+  <div
+    class="grid  gap-2 grid-cols-1 md:grid-cols-[3fr_2fr] sm:grid-cols-[2fr_1fr]"
+  >
+    <div class="flex flex-col">
+      <PostPreviewList posts={posts} />
+      <div class="page__actions">
+        <a class="action__go-to-blog" href="/blog" title="All Posts"
+          >All Posts &rarr;
+        </a>
+      </div>
     </div>
+    <div class="flex">
+      <p>side</p>
+    </div>
+  </div>
 </DefaultPageLayout>
 
 <style>
-    .page__actions {
-        @apply flex justify-center md:justify-end py-6
-    }
-    .action__go-to-blog {
-        @apply text-base uppercase text-gray-500 dark:text-gray-400 hover:underline
-    }
+  .page__actions {
+    @apply flex justify-center md:justify-end py-6;
+  }
+  .action__go-to-blog {
+    @apply text-base uppercase text-gray-500 dark:text-gray-400 hover:underline;
+  }
 </style>
