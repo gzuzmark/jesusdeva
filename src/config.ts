@@ -25,10 +25,10 @@ export const NAV_ITEMS: NavItems = {
 
 export const SITE = {
     // Your site's detail?
-    name: 'Tanjiro',
-    title: 'Tanjiro',
+    name: 'Jesus Dev',
+    title: 'Jesus Dev',
     description: 'Software Engineer ',
-    url: 'https://astro-ink.vercel.app',
+    url: 'https://jesusdeva.vercel.app',
     githubUrl: 'https://github.com/gzuzmark',
     listDrafts: true
     // description ?
