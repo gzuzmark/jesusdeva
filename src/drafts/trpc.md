@@ -1,14 +1,13 @@
 ---
 layout: $/layouts/post.astro
 title: The new t3 stack
-description: "Review of the main points of t3 stack, incluiding pros and cons"
+description: 'Review of the main points of t3 stack, incluiding pros and cons'
 author: Jesus
-tags:  
-  - "trpc"
-  - "nextjs"
-authorTwitter: _Gzvz_
-date: 2022-10-13
-pubDate: 2022-10-13
+tags:
+  - trpc
+  - nextjs
+date: 2022-10-13T00:00:00.000Z
+pubDate: 2022-10-13T00:00:00.000Z
 ---
 
 # T3 stack first steps

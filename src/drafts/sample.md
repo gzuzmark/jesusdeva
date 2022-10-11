@@ -1,16 +1,13 @@
 ---
 layout: $/layouts/post.astro
 title: Suilad ambar - Let's start with bloggin
-description: "First blog of Jesus Marquez aka Tanjiro"
+description: First blog of Jesus Marquez aka Tanjiro
 author: Jesus
-tags:  
-  - "blogging"
-
-  - "helloworld"
-authorTwitter: _Gzvz_
-date: 2040-10-02
-pubDate: 2040-10-02
-reference: [https://filipedonadio.com/6-useful-templates-for-obsidian/](https://filipedonadio.com/6-useful-templates-for-obsidian/ "https://filipedonadio.com/6-useful-templates-for-obsidian/")
+tags:
+  - blogging
+  - helloworld
+date: 2040-10-02T00:00:00.000Z
+pubDate: 2040-10-02T00:00:00.000Z
 ---
 
 # title
