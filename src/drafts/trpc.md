@@ -7,8 +7,8 @@ tags:
   - "trpc"
   - "nextjs"
 authorTwitter: _Gzvz_
-date: 2022-10-02T17:03:43.199Z
-pubDate: 2022-10-13T08:03:43.199Z
+date: 2022-10-02
+pubDate: 2022-10-13
 ---
 
 # T3 stack first steps
