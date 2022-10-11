@@ -7,7 +7,7 @@ tags:
   - "trpc"
   - "nextjs"
 authorTwitter: _Gzvz_
-date: 2022-10-02
+date: 2022-10-13
 pubDate: 2022-10-13
 ---
 
