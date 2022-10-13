@@ -6,8 +6,8 @@ author: Jesus
 tags:
   - trpc
   - nextjs
-date: 2022-10-13T00:00:00.000Z
-pubDate: 2022-10-13T00:00:00.000Z
+date: 2022-09-30T00:00:00.000Z
+pubDate: 2022-09-30T00:00:00.000Z
 ---
 
 # T3 stack first steps

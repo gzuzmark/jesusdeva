@@ -1,14 +1,13 @@
 ---
 layout: $/layouts/post.astro
-title: Suilad ambar - Let's start with bloggin
-description: "First blog of Jesus Marquez aka Tanjiro"
+title: The new t3 stack
+description: "Review of the main points of t3 stack, incluiding pros and cons"
 author: Jesus
 tags:  
-  - "blogging"
-  - "helloworld"
-authorTwitter: _Gzvz_
-date: 2022-10-02T17:03:43.199Z
-pubDate: 2022-10-02T17:03:43.199Z
+  - "trpc"
+  - "nextjs"
+date: 2040-09-13
+pubDate: 2040-09-13
 ---
 
 ![](https://www.politika.rs/thumbs//upload/Article/Image/2018_02///677z381_kuca-dragutina-matica.jpg)
@@ -22,6 +21,25 @@ This blog is built with astro + svelte and takes Astro - Ink template as an star
 Next stop should be a post about Nextjs + trpc and my thoughts about it.
 
 Thanks for stopping by (☞ﾟヮﾟ)☞
+
+```javascript
+function MyButton() {
+  return (
+    <button>
+      I'm a button
+    </button>
+  );
+}
+
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}
+```
 
 
 -Jesus

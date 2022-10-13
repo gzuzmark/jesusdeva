@@ -1,7 +1,7 @@
 ---
 layout: $/layouts/post.astro
 title: Suilad ambar - Let's start with bloggin
-description: First blog of Jesus Marquez aka Tanjiro
+description: First blog of Jesus Marquez
 author: Jesus
 tags:
   - blogging
