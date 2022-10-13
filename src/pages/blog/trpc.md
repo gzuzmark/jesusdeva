@@ -26,14 +26,14 @@ Today we will try to dive into the [T3 stack](https://init.tips/#why) and basica
 
 <!-- ## Overview -->
 
--   A simple definition
--   So as stated in their [github repo](https://github.com/t3-oss/create-t3-app#about)
+A simple definition as stated in their [github repo](https://github.com/t3-oss/create-t3-app#about)
 
 > *"(...)The "T3 Stack" is a web development stack made by Theo focused on simplicity, modularity, and full-stack typesafety(...)"*
 >
 
 
-    💡 Next.js + tRPC + Tailwind CSS + Typescript + Prisma + NextAuth
+
+> 💡 Next.js + tRPC + Tailwind CSS + Typescript + Prisma + NextAuth
 
 
   To start developing with the t3 stack you can use the cli
@@ -41,8 +41,8 @@ Today we will try to dive into the [T3 stack](https://init.tips/#why) and basica
 
 ![](https://upww.screenrec.com/images/f_NSO8uUQ0mwPxaTYtEk2RBJcMgynjADe9.png)
 
--   Examples
--   Transition to the next section
+<!-- -   Examples
+-   Transition to the next section -->
 
 <!-- ## Steps -->
 
@@ -67,6 +67,7 @@ Today we will try to dive into the [T3 stack](https://init.tips/#why) and basica
   - `server` folder will contain the boilerplate for the trpc router, and in `utils/trpc` you will find helper types to query resolvers 
 
   
+# Structure of tRPC
 
   ```
   T
@@ -244,7 +245,10 @@ export const verifyLinkUsageResponseSchema = z.object({
 
 So this is a first view of tRPC and the very basics of what you can accomplish a fullstack app with the T3 stack.
 
-It's important that the T3 stack is awesome to start a project and save time with the initial setup of a fully typed app.
+It's important that the T3 stack is awesome to start a project and save time with the initial setup of a fully typed app. 
+
+
+This is the [github repo](https://github.com/gzuzmark/remotool) of the examples shown above 
 
 
 <!-- 
