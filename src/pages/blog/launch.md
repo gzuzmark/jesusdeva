@@ -1,13 +1,13 @@
 ---
 layout: $/layouts/post.astro
-title: The new t3 stack
-description: "Review of the main points of t3 stack, incluiding pros and cons"
+title: Suilad ambar - Let's start with bloggin
+description: "I'ts difficult or maybe overwhelming to start a new thing, but I'm tired of thinking of this to much and just launch me to write about the stuff that I do(mostly aboud development)"
 author: Jesus
 tags:  
   - "trpc"
   - "nextjs"
-date: 2040-09-13
-pubDate: 2040-09-13
+date: 2022-09-13
+pubDate: 2022-09-13
 ---
 
 ![](https://www.politika.rs/thumbs//upload/Article/Image/2018_02///677z381_kuca-dragutina-matica.jpg)
