@@ -19,9 +19,13 @@ jobs:
       # Checkout current branch / repo
       - uses: actions/checkout@v2
 
+      - name: Group of log lines
+        run: |
+            ls -a
+
       # Generates the feeds.json
       - name: Fetch RSS feeds as JSON
-        uses: i-valchev/rss-to-json@0.0.8
+        uses: I-Valchev/rss-to-json@1.0.0        
         with:
           source: /home/runner/work/jesusdeva/jesusdeva/feeds.yaml # temporary
           target: /home/runner/work/jesusdeva/jesusdeva/feeds.json # temporary
