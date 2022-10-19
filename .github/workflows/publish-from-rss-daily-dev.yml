@@ -1,0 +1,19 @@
+name: Update daily dev json from RSS bookmarks
+
+on:
+  schedule:
+    # Once a day at 8 AM
+    - cron: 0 8 * * *
+  push:
+    branches:
+      - main
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: I-Valchev/rss-to-json@1.0.0
+        with:
+          source: https://api.daily.dev/rss/b/1f292b76-a9e2-4af4-88c6-4938459f6273 # An optional parameter to specify the source. Defaults to feeds.yaml
+          target: output/feeds.json # An optional parameter to specify the target. Defaults to feeds.json          
+          
