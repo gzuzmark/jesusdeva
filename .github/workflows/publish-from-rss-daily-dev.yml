@@ -23,8 +23,8 @@ jobs:
       - name: Fetch RSS feeds as JSON
         uses: i-valchev/rss-to-json@0.0.8
         with:
-          source: /home/runner/work/productnews/productnews/feeds.yaml # temporary
-          target: /home/runner/work/productnews/productnews/feeds.json # temporary
+          source: /home/runner/work/jesusdeva/jesusdeva/feeds.yaml # temporary
+          target: /home/runner/work/jesusdeva/jesusdeva/feeds.json # temporary
 
       # Commit chnages to repo
       - name: Git Auto Commit
