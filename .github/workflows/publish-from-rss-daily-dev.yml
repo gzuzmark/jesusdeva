@@ -13,10 +13,22 @@ on:
 
 jobs:
   update:
+    name: update
     runs-on: ubuntu-latest
     steps:
-      - uses: i-valchev/rss-to-json@0.0.8
+      # Checkout current branch / repo
+      - uses: actions/checkout@v2
+
+      # Generates the feeds.json
+      - name: Fetch RSS feeds as JSON
+        uses: i-valchev/rss-to-json@0.0.8
         with:
-          source: /home/runner/work/jesusdeva/jesusdeva/feeds.yaml # An optional parameter to specify the source. Defaults to feeds.yaml
-          target: /home/runner/work/jesusdeva/jesusdeva/feeds.json # An optional parameter to specify the target. Defaults to feeds.json          
+          source: /home/runner/work/productnews/productnews/feeds.yaml # temporary
+          target: /home/runner/work/productnews/productnews/feeds.json # temporary
+
+      # Commit chnages to repo
+      - name: Git Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v4.8.0
+        with:
+          commit_message: Update feeds.json with RSS data.
           
