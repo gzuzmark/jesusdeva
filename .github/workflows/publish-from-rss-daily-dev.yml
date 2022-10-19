@@ -26,9 +26,7 @@ jobs:
       # Generates the feeds.json
       - name: Fetch RSS feeds as JSON
         uses: I-Valchev/rss-to-json@1.0.0        
-        with:
-          source: /home/runner/work/jesusdeva/jesusdeva/feeds.yaml # temporary
-          target: /home/runner/work/jesusdeva/jesusdeva/feeds.json # temporary
+        
 
       # Commit chnages to repo
       - name: Git Auto Commit
