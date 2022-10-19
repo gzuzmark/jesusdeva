@@ -16,7 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: I-Valchev/rss-to-json@1.0.0
-        with:
-          source: data/feeds.yaml # An optional parameter to specify the source. Defaults to feeds.yaml
+        with:          
           target: output/feeds.json # An optional parameter to specify the target. Defaults to feeds.json          
           
