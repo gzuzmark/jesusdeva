@@ -7,7 +7,7 @@ const { bookmarks } = Astro.props;
 >
   Daily dev bookmarks
 </h2>
-<div class="mt-8 ml-[-32px]">
+<div class="mt-8 md:ml-[-32px] sm:ml-[-32px]">
   {bookmarks.map((bookmark) => (
     <ul class='p-0 text-lg list-none'>
       <li class='flex flex-row-reverse mb-4 items-start'>

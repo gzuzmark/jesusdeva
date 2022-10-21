@@ -1,7 +1,7 @@
 ---
 import DefaultPageLayout from "$/layouts/default.astro";
 import PostPreviewList from "$/components/PostPreviewList.astro";
-import BookmarksList from "src/components/BookmarksList.astro";
+import BookmarksList from "$components/BookmarksList.astro";
 
 const title = "Home";
 const description = "Jesus Marquez web developer blog and personal site";
@@ -14,7 +14,7 @@ const response = await fetch(
 const bookmarks = await response.json();
 const filteredBookmarks = bookmarks
   .filter((b) => b.categories.includes("react", "react-hooks", "javacript"))
-  .sort((a: string, b: string) => new Date(b.isoDate) - new Date(a.isoDate));
+  .sort((a, b) => +new Date(b.isoDate) - +new Date(a.isoDate));
 ---
 
 <DefaultPageLayout content={{ title, description }} showPageHeader={false}>
