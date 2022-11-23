@@ -86,7 +86,7 @@ somePromise()
   .catch(err => console.error(err))
 ```
 
-![](../../public/images/uploads/quadrant.svg)
+<figure id="0abc6a03-99de-4195-bec9-e7392581789f" class="image"><a href="../../public/images/uploads/quadrant.svg"><img style="width:480px" src="../../public/images/uploads/quadrant.svg"></a></figure>
 
 Promises solve many raw callbacks drawbacks because they are similar to handling synchronous code, but the only support handling a **single value** throws the flow. So this is where RxJS comes to action. In the following image we can see that observables offer a way to handle multiple values in an asynchronous way, but what is an **observable?** It's an abstraction that can be thought of as an array,  but with the capability of change**,** that means it can **emit different values over time.** 
 
@@ -97,7 +97,9 @@ Promises solve many raw callbacks drawbacks because they are similar to handling
 
 The concept of stream refers to any kind of event, like an api new data, a button click(s), etc. Conceptually, streams emit a value, an error and complete signal.  Commonly, a stream its represented as a bunch of values over an arrow (Representing time).
 
-![](../../public/images/uploads/stream.png)
+
+
+<figure id="1e835f66-2db3-4c21-9fa5-f05a3cd7dd98" class="image"><a href="../../public/images/uploads/stream.png"><img style="width:720px" src="../../public/images/uploads/stream.png"></a></figure>
 
 [Image  from: Andre Staltz, *The introduction to Reactive Programming you've been missing*](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754#file-zclickstream-png)
 
@@ -330,7 +332,7 @@ behaviorSubject .subscribe(console.log); // prints one previous value: 2nd value
 
 You must noticed that to transform certain values emitted by observables we used some methods like `map()` for example. Those methods are called operators. You can think of operators of different kind of tubes that modify the water flow in a pipe system. ~~Yes we know that this example is overly used but it  fulfills its didactic task especially for beginners.~~
 
-![](../../public/images/uploads/pipes.t9.png)
+<figure id="238569bc-9cfd-4bcb-9803-b669045f2b3f" class="image"><a href="../../public/images/uploads/pipes.t9.png"><img style="width:480px" src="../../public/images/uploads/pipes.t9.png"></a></figure>
 
 ### Map
 
