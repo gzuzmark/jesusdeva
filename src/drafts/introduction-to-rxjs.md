@@ -1,6 +1,6 @@
 ---
 layout: $/layouts/post.astro
-title: The request animation story 
+title: Introduction to RxJs
 description: 'Through out my career I had the opportunity to work with and awesome tool like rxjs, first introduce to me in the angular ecosystem, and then it was a nice library to help in react projects'
 author: Jesus
 tags:
@@ -9,12 +9,7 @@ tags:
 date: 2022-11-24T00:00:00.000Z
 pubDate: 2022-11-24T00:00:00.000Z
 ---
-
-
-
-
 # RxJS
-
 
 Through out my career I had the opportunity to work with and awesome tool like rxjs, first introduce to me in the angular ecosystem, and then it was a nice library to help in react projects. The following is an article with an introduction to the nice parts of RxJs.
 
