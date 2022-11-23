@@ -6,8 +6,8 @@ author: Jesus
 tags:
   - rxjs
   - javascript
-date: 2022-09-24T00:00:00.000Z
-pubDate: 2022-09-24T00:00:00.000Z
+date: 2022-11-24T00:00:00.000Z
+pubDate: 2022-11-24T00:00:00.000Z
 ---
 
 
