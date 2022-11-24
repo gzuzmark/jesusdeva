@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: SSG Publish Drafts
         # You may pin to the exact commit or the version.
-        uses: one-aalam/github-action-astro-publish-drafts@v0.1-beta
+        uses: one-aalam/github-action-ssg-publish-drafts@v0.1-beta
         with:
           github_token: $\{{ secrets.GITHUB_TOKEN }}
           github_actor: gzuzmark
