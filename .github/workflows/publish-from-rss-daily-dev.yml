@@ -1,9 +1,9 @@
 name: Update daily dev json from RSS bookmarks
 
 on:
-  schedule:
+  #schedule:
     # Once a day at 8 AM
-    - cron: 0 8 * * *
+    #- cron: 0 8 * * *
   push:
     branches:
       - main
